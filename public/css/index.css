@@ -1,7 +1,130 @@
-html {
-  max-width: 720px;
+.card {
+  color: aqua;
+}
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
 }
 
-body {
-  background: #fff;
+p:focus,p:active,p:hover {
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px rgb(0, 255, 30);
+  direction: rtl;
+}
+
+#test {
+  color: initial;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: initial;
+
+  /* writing-mode: vertical-lr; */
+
+  text-align: center;
+}
+
+#big {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+
+  text-decoration: underline dotted red;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+ span {
+  font-size: xx-large;
+  font-weight: normal;
+  font-style: oblique;
+ }
+ .test {
+  display: none;
+ }
+
+ .block {
+  display: inline-block;
+  background-color: gray;
+  margin: auto;
+ } 
+
+ .card {
+  border: 1.2px solid red;
+  border-radius: 0px;
+ }
+
+
+ .card:hover {
+  outline: 1.2px solid blue;
+  outline-offset: 5px;
+  opacity: 50%;
+ }
+
+ p {
+  text-shadow: 0px 0px 10px rgb(178, 0, 0);
+ }
+
+ .card {
+  box-shadow: 0px 3px 6px 5px rgba(75, 84, 110, 0.286);
+ }
+
+ /* список */
+ ul {
+  list-style-type: circle;
+ }
+ ul {
+  list-style-image:linear-gradient(to bottom right,blue,green);
+ }
+
+ /* таблиця */
+ /* .table tr {
+  border: 1px solid black;
+ } */
+ .table tr td {
+  border: 1px solid rgb(26, 181, 195);
+ }
+
+ .table {
+  table-layout: fixed;
+  width: 600px;
+  border-collapse: unset;
+  border-spacing: 10px;
+
+  empty-cells: hide;  /*ховае пусту комірку в таблиці */
+
+ }
+ caption {
+  caption-side: top;
+ }
+
+
+ .link::before
+ {
+  content: open-quote;
+ }
+ .link::after {
+  content: close-quote;
+ }
+
+.calc {
+  width: 600px;
+  margin-left: calc(50% - (600px / 2));
+}
+.btn:hover{
+color: aqua;
+background-color: aqua;
+}
+.btn {
+ transition: opacity 1s, background-color 1s;
+}
+
+.modal {
+  position: fixed;
+  bottom: 0px;
+ 
+  height: 100px;
+  width: 100px;
+  background-color: black;
 }

@@ -1,0 +1,275 @@
+:root {
+    background: purple;
+}
+
+html {
+  max-width: 720px;
+
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: rgb(0, 116, 78);
+}
+
+
+.box {
+    background: #cfcfcf;
+}
+
+#user {
+  color: blue;
+}
+
+
+
+h1.button {
+  background: red;
+  color: black;
+}
+
+
+h1, 
+h2#user, 
+button.button {
+  color: green;
+}
+div > p {
+  color: rgb(159, 127, 0);
+}
+
+
+#user,
+.user {
+  color: blue;
+}
+
+footer > .user {
+  color: palevioletred;
+}
+
+footer > h1 {
+  color: palevioletred;
+}
+
+footer  em.child {
+  color: rgb(12, 228, 77);
+}
+
+h1 + p {
+ background: black;
+}
+
+h1 ~ p {
+  background: darkcyan;
+}
+
+.card-dark {
+  background: rgb(185, 182, 182);
+}
+
+.item {
+  color: green;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+
+.item:last-child {
+  color:aqua;
+}
+
+li:only-child {
+  color: rgb(103, 255, 255);
+}
+
+.item:first-of-type {
+  color: rgb(216, 255, 22);
+}
+.item:last-of-type {
+  color: #6227f7;
+}
+
+.item:only-of-type {
+  color: #141413;
+}
+
+.b:nth-child(2) {
+  color: rgb(3, 247, 255);
+}
+
+p:not(.big) {
+  color: #141413;
+}
+/* Працює якщо тег порожній */
+p:empty {
+  height: 10px;
+  background: red;
+}
+
+.input-dark {
+  background: #686969;
+}
+
+.input-dark[reguired] {
+  background: #00bbb8;
+}
+
+.input-dark[type="number"] {
+  background: rgb(0, 139, 42);
+}
+
+.small-img[alt~="small"] {
+  height: 500px;
+}
+
+button[class|="btn"] {
+  background: aquamarine;
+}
+
+/* a[class^="btn"] {
+  background: #045756;
+} 
+ це працює якщо перед класом нема більше слів тобто 
+(btn btn-secondary) якщо вже буде ось так 
+(small  btn btn-secondary) то працювати 
+небуде тоді використовуємо нижню конструкцію.*/
+
+a[class*="btn"] {
+  background: burlywood;
+}
+
+a[class$="big"] {
+  background: #777700;
+}
+
+.btn::first-letter {
+  color: rgb(234, 11, 205);
+}
+.big-text::first-line {
+  color: brown;
+}
+
+.input-dark::placeholder {
+  color: yellowgreen;
+}
+
+.big-text::before {
+  content: "$$$";
+  color: #777700;
+}
+
+.big-text::after {
+  content: "$$$";
+  color: #777700;
+}
+.card-blue {
+  background: #b3b5b5;
+}
+
+:any-link {
+  color: wheat;
+}
+
+a:hover {
+  color: pink;
+}
+button:active {
+  color: #011010;
+}
+
+input:focus {
+  color: #6227f7;
+}
+
+input {
+  background: darkcyan ;
+}
+
+
+#test:target {
+  color: #141413;
+}
+
+.link:link {
+  color: darkgreen;
+} 
+
+.card:hover {
+  background: #00bbb8;
+}
+
+.card:focus-within {
+  background-color: darkgoldenrod;
+}
+
+.card:lang(en) > span::after {
+  content: ' (en)';
+}
+
+
+button {
+  background: #ffff7d;
+}
+
+button:enabled {
+  background-color: #00bbb8;
+}
+
+button:disabled {
+  background-color: #ffff7d;
+}
+
+.inp:read-write {
+  background-color: #79f824;
+}
+
+
+.inp:read-only {
+  background-color: #f82460;
+}
+
+input[type='checkbox']:checked ~ span {
+  background-color: #686969;
+}
+
+.valid:valid {
+  background: yellowgreen;
+}
+
+.valid:invalid {
+  background: #011918;
+}
+.valid:optional {
+  background: #79f824;
+}
+
+.number:focus {
+  background: gray;
+}
+
+.number:out-of-range {
+  background: red;
+}
+
+.number:in-range {
+  background: green;
+}
+
+.number:invalid {
+  background: yellowgreen;
+}
+
+input:placeholder-shown ~ span {
+  background-color: pink;
+}

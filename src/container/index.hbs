@@ -1,15 +1,65 @@
-{{!-- 
-Це код container файлу для index сторінки, 
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
- --}}
+<main class='p-5'>
+  <div class='card p-5'>
+    <p id='test'>
+      Hello world
+    </p>
+  </div>
+  <div class='card p-5 mt-3'>
+    <p id='big'>
+      Hello world
+    </p>
+  </div>
 
-<div class="p-5">
-    <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+  <span class='test'>
+    test
+  </span>
 
-    <button type="button" class="btn btn-primary">Купити</button>
-</div>
+  <div style='margin: 10px 20px 10px 20px;'>
+    <span>Inline</span>
+    <span>Inline</span>
+    <span>Inline</span>
 
-{{!-- 
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
---}}
+    <span class='block'>Inline</span>
+
+  </div>
+
+  <div>
+    <ul>
+      <li>test 1</li>
+      <li>test 2</li>
+      <li>test 3</li>
+    </ul>
+  </div>
+
+  <div class='page_block'>
+
+    <div class='calc'>
+      <table class='table'>
+        <caption>My table</caption>
+        <tbody>
+          <tr>
+            <td>
+              Test 1
+            </td>
+            <td>
+              Test 2
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <div>
+    <a href='#' class='btn btn-primary'>Click me</a>
+  </div>
+  <div class='modal'>
+    <div class='modal_text'>
+      <b>
+        Az elektron feles spinű lepton; a leptonok első
+        generációjának tagja. Antirészecskéje a pozitron.
+      </b>
+    </div>
+  </div>
+</main>
