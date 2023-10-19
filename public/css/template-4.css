@@ -1,77 +1,241 @@
+:root {
+  --color-primary: rgb(46, 46, 255);
+  --color-white: #fff;
+  --color-title: #212529;
+  --color-text: #5a5a5a;
+
+
+  --font-w: 400;
+}
+
+
+
+
+/* ================= */
+
 .page {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   padding: 0 15px;
+  display: flex;
+  justify-content: center;
 }
 .page_content {
   max-width: 960px;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
+
+
+/* ==================== */
 
 .header {
-  padding: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #DEE2E6;
+
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
-  font-size: 17px;
-}
-.divider {
-  margin: 0;
-  height: 1px;
-  background: #dee2e6;
-}
+  font-size: 16px;
+  color: var(--color-white);
 
+  background: var(--color-primary);
+  width: 24px;
+  height: 24px;
+
+  border-radius: calc(12px / 2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .nav {
-  display: block;
+  display: flex;
+  gap: 24px;
+}
+
+.nav_vertical {
+  gap: 16px;
+  flex-direction: column;
 }
 
 .nav_link:hover {
-    text-decoration: underline;
-    color: blue;
+  text-decoration: underline;
+  color: var(--color-primary);
 }
 
 .nav_link {
   color: #343a40;
   font-size: 16px;
   text-decoration: none;
-}
-
-.nav_vertical > .nav_link {
-  display: block;
-}
-
-.nav_inline > .nav_link:not(:last-child) {
-  margin-right: 24px;
-}
-
-
-.nav_vertical>.nav_link:not(:last-child) {
-  margin-bottom: 12px;
-}
-
-.header_nav_right {
-  margin-left: auto;
-  width: fit-content;
-}
-
-.page_block:not(:last-child) {
-  margin-bottom: 80px;
+  line-height: 100%;
 }
 
 .footer {
   padding: 24px 0;
+
+  border-top: 1px solid #DEE2E6;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer_copyright {
   font-size: 14px;
-  color: #6c757d;
+  color: #343a40;
 
   display: block;
-  margin-top: 12px;
-} 
+  margin-top: 24px;
+}
 
 .footer_title {
   font-size: 20px;
-  color: #212529;
+  color: var(--color-title);
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+  font-weight: 500;
 }
+.main {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 36px;
+}
+
+.main_image {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+}
+
+.main_content {
+display: flex;
+flex-direction: column;
+gap: 24px;
+max-width: 420px;
+}
+
+.main_title {
+  font-size: 36px;
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.main_description {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: var(--font-w);
+  line-height: 140%;
+}
+.main_button {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  width: 120px;
+  height: 40px;
+  text-align: center;
+}
+
+.main_button:hover {
+  opacity: 0.7;
+}
+
+.fuatured {
+  display: flex;
+  gap: 24px;
+  padding: 26px 0;
+  border-bottom: 1px solid #5a5a5a25;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  align-items: stretch;
+  text-align: start;
+}
+
+.card_photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+
+.card_heading {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-title);
+}
+
+.card_info {
+  font-size: 20px;
+  font-weight: var(--font-w);
+  color: var(--color-title);
+  line-height: 140%;
+  max-width: 280;
+}
+ 
+.card_link {
+color: var(--color-primary);
+font-size: 16px;
+text-decoration: underline;
+}
+
+.card_link:hover {
+  opacity: 0.5;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--color-primary);
+  padding: 24px;
+  border-radius: 8px;
+}
+.form_content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form_title {
+  display: flex;
+  font-size: 24px;
+  font-weight: var(--font-w);
+  line-height: 16px;
+  color: var(--color-white);
+}
+
+.form_button {
+  display: flex;
+  background-color: var(--color-white);
+  text-decoration: none;
+  width: 240px;
+  height: 50px;
+  color: var(--color-title);
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  border-radius: 6px;
+  line-height: 20px;
+  font-weight: var(--font-w);
+  font-size: 20px;
+}
+.form_button:hover {
+  opacity: 0.5;
+}
+
+
