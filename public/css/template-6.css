@@ -154,6 +154,8 @@
   padding: 24px;
 }
 
+
+
 .update_title {
   color: var(--color-title);
   font-size: 24px;
@@ -169,11 +171,18 @@
   display: flex;
   width: 32px;
   height: 32px;
-  background-color: blue;
+  background-color: #007BFF;
   float: left;
   margin-right: 12px;
- 
 }
+.list:nth-of-type(2) .updates_media .media {
+  background-color: #E83E8C;
+}
+
+.list:nth-of-type(3) .updates_media .media {
+  background-color: #6F42C1;
+}
+
 
 .list {
   display: flex;
@@ -275,6 +284,7 @@
   border-radius: 12px;
   width: 100%;
 }
+
 
  
 
